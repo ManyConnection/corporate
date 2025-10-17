@@ -7,7 +7,7 @@ export function Header() {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-semibold text-foreground">
-            企業名
+            ManyConnection合同会社
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -25,9 +25,6 @@ export function Header() {
             </Link>
           </nav>
 
-          <Button size="sm" className="hidden md:inline-flex">
-            お問い合わせ
-          </Button>
         </div>
       </div>
     </header>

@@ -8,17 +8,17 @@ export function CompanySection() {
           <div className="space-y-8">
             <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
               <div className="text-sm text-muted-foreground">会社名</div>
-              <div className="md:col-span-2 text-foreground">株式会社サンプル企業</div>
+              <div className="md:col-span-2 text-foreground">ManyConnection合同会社</div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
               <div className="text-sm text-muted-foreground">設立</div>
-              <div className="md:col-span-2 text-foreground">2000年4月1日</div>
+              <div className="md:col-span-2 text-foreground">2023年10月18日</div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
               <div className="text-sm text-muted-foreground">代表者</div>
-              <div className="md:col-span-2 text-foreground">代表取締役社長 山田 太郎</div>
+              <div className="md:col-span-2 text-foreground">代表取締役社長 多田 友哉</div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
@@ -26,28 +26,18 @@ export function CompanySection() {
               <div className="md:col-span-2 text-foreground">
                 〒100-0001
                 <br />
-                東京都千代田区千代田1-1-1
+                東京都豊島区東池袋１丁目３４番５号いちご東池袋ビル６階
               </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
-              <div className="text-sm text-muted-foreground">資本金</div>
-              <div className="md:col-span-2 text-foreground">1億円</div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
-              <div className="text-sm text-muted-foreground">従業員数</div>
-              <div className="md:col-span-2 text-foreground">150名</div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 py-6 border-b border-border">
               <div className="text-sm text-muted-foreground">事業内容</div>
               <div className="md:col-span-2 text-foreground">
-                デジタルコンサルティング
+                デジタル戦略コンサルティング
                 <br />
                 システム開発・導入支援
                 <br />
-                データ分析サービス
+                アプリ開発
                 <br />
                 クラウドソリューション
               </div>

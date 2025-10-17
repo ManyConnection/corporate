@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -24,12 +25,16 @@ export function HeroSection() {
           お客様のビジネスを次のステージへと導きます
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-base">
-            サービスを見る
-          </Button>
-          <Button size="lg" variant="outline" className="text-base bg-transparent">
-            お問い合わせ
-          </Button>
+          <Link href="#services">
+            <Button size="lg" className="text-base hover:scale-105 transition-transform duration-200 cursor-pointer">
+              サービスを見る
+            </Button>
+          </Link>
+          <Link href="#contact">
+            <Button size="lg" variant="outline" className="text-base bg-transparent hover:bg-primary hover:text-primary-foreground transition-colors duration-200 cursor-pointer">
+              お問い合わせ
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

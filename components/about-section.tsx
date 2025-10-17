@@ -6,7 +6,7 @@ export function AboutSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">私たちについて</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             私たちは、革新的なソリューションを通じて企業の成長を支援する専門家集団です。
-            20年以上の実績と経験を活かし、お客様のビジネス課題に対して最適な解決策を提供しています。
+            豊富な経験と最新の知識を活かし、お客様のビジネス課題に対して最適な解決策を提供しています。
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             テクノロジーの力で社会に貢献し、持続可能な未来を創造することが私たちの使命です。

@@ -58,7 +58,7 @@ export function ContactSection() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full md:w-auto">
+                <Button type="submit" size="lg" className="w-full md:w-auto hover:scale-105 transition-transform duration-200 cursor-pointer">
                   送信する
                 </Button>
               </form>

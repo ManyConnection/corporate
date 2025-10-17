@@ -8,13 +8,13 @@ const services = [
   },
   {
     number: "02",
-    title: "システム開発・導入",
+    title: "システム開発・導入支援",
     description: "最新技術を活用した高品質なシステム開発と、スムーズな導入支援を提供します。",
   },
   {
     number: "03",
-    title: "データ分析・活用",
-    description: "ビッグデータを活用し、ビジネスインサイトを導き出すデータ分析サービスを提供します。",
+    title: "アプリ開発",
+    description: "iOS・Android・Web など各プラットフォームに対応したアプリを設計・開発します。",
   },
   {
     number: "04",
