@@ -18,7 +18,7 @@ export function ContactSection() {
               <form
                 name="contact"
                 method="POST"
-                action="/contact-success"
+                action="/contact-success.html"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 className="space-y-6"
