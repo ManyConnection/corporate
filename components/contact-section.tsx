@@ -15,13 +15,13 @@ export function ContactSection() {
 
           <Card className="border-border bg-background">
             <CardContent className="p-8">
-              <form className="space-y-6">
+              <form name="contact" method="POST" data-netlify="true" className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
                       お名前 <span className="text-primary">*</span>
                     </label>
-                    <Input id="name" placeholder="山田 太郎" required className="bg-background" />
+                    <Input id="name" name="name" placeholder="山田 太郎" required className="bg-background" />
                   </div>
 
                   <div className="space-y-2">
@@ -30,6 +30,7 @@ export function ContactSection() {
                     </label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="example@company.com"
                       required
@@ -42,7 +43,7 @@ export function ContactSection() {
                   <label htmlFor="company" className="text-sm font-medium text-foreground">
                     会社名
                   </label>
-                  <Input id="company" placeholder="株式会社サンプル" className="bg-background" />
+                  <Input id="company" name="company" placeholder="株式会社サンプル" className="bg-background" />
                 </div>
 
                 <div className="space-y-2">
@@ -51,6 +52,7 @@ export function ContactSection() {
                   </label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="お問い合わせ内容をご記入ください"
                     rows={6}
                     required
