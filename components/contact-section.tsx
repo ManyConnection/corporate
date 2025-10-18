@@ -15,7 +15,11 @@ export function ContactSection() {
 
           <Card className="border-border bg-background">
             <CardContent className="p-8">
-              <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-6">
+                <input type="hidden" name="form-name" value="contact" />
+                <div style={{ display: 'none' }}>
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground">
