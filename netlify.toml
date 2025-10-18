@@ -5,3 +5,10 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+  force = true
+  # POST のときだけ書き換える
+  conditions = {RequestMethod = ["POST"]}
