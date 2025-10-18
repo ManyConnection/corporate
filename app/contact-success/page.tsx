@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { Button } from "@/components/ui/button"
+
 export const metadata = {
   title: "お問い合わせありがとうございます",
   description: "ManyConnection合同会社へのお問い合わせを受け付けました。",
@@ -16,12 +18,9 @@ export default function ContactSuccessPage() {
         <p className="text-base text-muted-foreground leading-relaxed">
           送信内容を受け付けました。担当者より折り返しご連絡いたしますので、今しばらくお待ちください。
         </p>
-        <Link
-          href="/"
-          className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium transition-colors hover:bg-primary/90"
-        >
-          トップページに戻る
-        </Link>
+        <Button asChild size="lg" className="rounded-full px-8">
+          <Link href="/">トップページに戻る</Link>
+        </Button>
       </div>
     </main>
   )
