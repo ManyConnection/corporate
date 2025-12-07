@@ -16,18 +16,23 @@ export function Footer() {
             <h4 className="text-sm font-semibold mb-4">サイトマップ</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
-                <Link href="#services" className="hover:text-background transition-colors">
+                <Link href="/#services" className="hover:text-background transition-colors">
                   サービス
                 </Link>
               </li>
               <li>
-                <Link href="#company" className="hover:text-background transition-colors">
+                <Link href="/#company" className="hover:text-background transition-colors">
                   企業情報
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-background transition-colors">
+                <Link href="/#contact" className="hover:text-background transition-colors">
                   お問い合わせ
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                  プライバシーポリシー
                 </Link>
               </li>
             </ul>
