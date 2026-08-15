@@ -11,13 +11,17 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-24 pb-16">
+      <main className="relative isolate overflow-hidden pt-32 pb-24">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+          <div className="flex items-baseline gap-4 border-b border-foreground pb-4 mb-8">
+            <span className="font-mono text-xs tracking-[0.25em] text-foreground">00</span>
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">Privacy Policy</span>
+          </div>
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-12">
             プライバシーポリシー
           </h1>
 
-          <div className="prose prose-gray max-w-none space-y-8">
+          <div className="max-w-none space-y-8">
             <section>
               <p className="text-muted-foreground leading-relaxed">
                 TimeFit（以下「本アプリ」）は、ManyConnection LLC.（以下「当社」）が提供するサービスです。当社は、本アプリの利用者（以下「ユーザー」）の個人情報を適切に取り扱うため、以下のプライバシーポリシーを定めます。
@@ -116,7 +120,7 @@ export default function PrivacyPolicyPage() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 プライバシーポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。
               </p>
-              <div className="bg-muted/50 p-6 rounded-lg">
+              <div className="border border-border bg-surface p-6">
                 <p className="text-foreground font-medium">ManyConnection LLC.</p>
                 <p className="text-muted-foreground mt-2">
                   お問い合わせ Email: tada@manyconnection.co.jp
