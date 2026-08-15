@@ -22,7 +22,7 @@ const services = [
     description:
       "toC / toB 向けのWebサービスを、MVPの立ち上げから本格運用まで。まず小さく作って検証したい、というご相談にも対応します。",
     deliverables: ["企画・要件の壁打ち", "UI/UX設計", "フロント・バックエンド開発", "リリース後の改善運用"],
-    price: "200万円〜",
+    price: "300万円〜",
     duration: "2ヶ月〜",
   },
   {

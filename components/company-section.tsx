@@ -1,10 +1,10 @@
 import { SectionHeading } from "@/components/section-heading"
 
-/* 会社情報は登記内容と一致させてください。※代表者肩書は要確認（README参照） */
+/* 会社情報は登記内容と一致させてください。 */
 const profile = [
   { label: "会社名", value: ["ManyConnection合同会社"] },
   { label: "設立", value: ["2023年10月18日"] },
-  { label: "代表者", value: ["代表取締役社長 多田 友哉"] },
+  { label: "代表者", value: ["代表社員 多田 友哉"] },
   { label: "所在地", value: ["〒170-0013", "東京都豊島区東池袋１丁目３４番５号いちご東池袋ビル６階"] },
   { label: "連絡先", value: ["tada@manyconnection.co.jp"] },
   {
