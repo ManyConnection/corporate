@@ -5,11 +5,18 @@
   <title>Contact Form</title>
 </head>
 <body>
+  <!-- Netlify Forms のフィールド検出用。components/contact-section.tsx と項目を必ず揃えること -->
   <form name="contact" method="POST" action="/contact-success.html" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="company" />
     <input type="text" name="name" />
     <input type="email" name="email" />
-    <input type="text" name="company" />
+    <input type="tel" name="tel" />
+    <input type="text" name="inquiry-type" />
+    <input type="text" name="budget" />
+    <input type="text" name="schedule" />
+    <input type="text" name="phase" />
     <textarea name="message"></textarea>
+    <input type="text" name="privacy" />
     <input type="hidden" name="form-name" value="contact" />
   </form>
 </body>
