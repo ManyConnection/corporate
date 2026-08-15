@@ -19,14 +19,18 @@ export function HeroSection() {
 
       <div className="container relative mx-auto px-6 lg:px-8">
         <div className="max-w-4xl">
-          <div className="mb-10 flex items-center gap-4">
-            <span className="h-px w-12 bg-foreground" aria-hidden />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-              Software development partner
+          <div className="mb-10 flex items-center gap-3 sm:gap-4">
+            <span className="h-px w-8 shrink-0 bg-foreground sm:w-12" aria-hidden />
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground sm:tracking-[0.25em]">
+              Development partner
             </span>
           </div>
 
-          <h1 className="mb-10 text-5xl font-bold leading-[1.05] tracking-tight text-balance text-foreground md:text-7xl lg:text-8xl">
+          {/*
+            見出しは10文字（「作りたいもの」を、）が1行に収まる必要がある。
+            clamp で文字サイズを画面幅に追従させ、どの幅でも意図した2行を保つ。
+          */}
+          <h1 className="mb-10 text-[clamp(1.75rem,8vw,5rem)] font-bold leading-[1.15] tracking-tight text-foreground">
             「作りたいもの」を、
             <br />
             動くシステムに。
