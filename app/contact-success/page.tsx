@@ -1,10 +1,18 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "お問い合わせありがとうございます",
   description: "ManyConnection合同会社へのお問い合わせを受け付けました。",
+  alternates: {
+    canonical: "/contact-success",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function ContactSuccessPage() {
