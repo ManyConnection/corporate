@@ -2,11 +2,9 @@ import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
+import { siteName, siteUrl } from '@/lib/site'
 import './globals.css'
 
-/* 本番ドメインが異なる場合はここを差し替えてください */
-const siteUrl = 'https://manyconnection.co.jp'
-const siteName = 'ManyConnection合同会社'
 const siteDescription =
   '業務システム・Webサービス・モバイルアプリの受託開発会社。要件整理から設計・開発・運用保守まで一気通貫で対応します。費用・納期の目安を公開中。初回相談とお見積りは無料、NDA締結にも対応します。'
 

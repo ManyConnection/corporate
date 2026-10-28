@@ -3,8 +3,11 @@ import { Footer } from "@/components/footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | ManyConnection合同会社",
+  title: "プライバシーポリシー",
   description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 }
 
 export default function PrivacyPolicyPage() {
