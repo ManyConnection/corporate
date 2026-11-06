@@ -3,6 +3,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
+  robots: { index: false, follow: true },
+  alternates: { canonical: "/contact-success" },
   title: "お問い合わせありがとうございます",
   description: "ManyConnection合同会社へのお問い合わせを受け付けました。",
 }
