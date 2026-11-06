@@ -75,3 +75,19 @@ Netlify は**静的 HTML からフィールドを検出**するため、フォ�
 
 **項目を増減したら必ず両方を揃えてください。** 揃っていないフィールドは送信されても記録されません。
 送信後は `public/contact-success.html` を経由して `/contact-success` に遷移します。
+
+## 会社サイトの Google Analytics
+
+- GA4 アカウント: `manyconnection` (`286450745`)
+- プロパティ: `ManyConnection 会社HP` (`562899342`)
+- Web ストリーム: `ManyConnection 会社HP Web` (`16283417777`)
+- 測定 ID: `G-MNHRXGGN73`（公開用の識別子。秘密情報ではありません）
+- Googleにより専用タグはGTMコンテナ `GTM-WBK26TXG` に自動移行されています。バージョン2で自動イベント検出とユーザー提供データ機能を無効化済みです。サイトでは測定ID経由のタグを1つだけ読み込みます。
+- `components/analytics-consent.tsx` が同意 UI とタグを一元管理します。GTM 等に同じ GA タグを追加しないでください。
+- `manyconnection.co.jp` の許可済みパスのみを計測します。プレビューと localhost は対象外です。
+- 同意前・拒否時はタグをロードしません。広告関連の同意は拒否のままです。設定変更はページ下部から可能です。
+- 拡張計測は GA 管理画面で無効化済み。ページ閲覧は `send_page_view: false` と明示イベントで管理し、フォーム入力、URL クエリ、フラグメント、参照元 URL は送りません。
+- パス追加時は `pageTitles` の固定タイトルと sitemap を更新してください。個人情報を含む動的パスは追加しないでください。
+- `/analytics-privacy` は会社サイトの GA 用説明ページです。既存の `/privacy-policy` は TimeFit 用のままです。
+- Vercel Web Analytics は従来設定を維持しています。
+- 変更時は型検査・ビルドに加え、初回／拒否／許可／SPA 遷移／取り消し／別タブ／同意期限切れをブラウザで確認してください。許可前に Google 通信がないことと、許可後のページ閲覧が一度だけ送信されることを確認します。
