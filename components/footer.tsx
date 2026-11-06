@@ -68,6 +68,7 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li><Link href="/analytics-privacy" className="text-background/70 transition-colors hover:text-background">アクセス解析について</Link></li>
               <li>
                 <Link
                   href="/privacy-policy"

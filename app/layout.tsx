@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
+import { AnalyticsConsent } from '@/components/analytics-consent'
 import './globals.css'
 
 /* 本番ドメインが異なる場合はここを差し替えてください */
@@ -89,6 +90,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <Analytics />
+        <AnalyticsConsent />
       </body>
     </html>
   )
