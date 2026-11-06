@@ -3,7 +3,21 @@ import { Footer } from "@/components/footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | ManyConnection合同会社",
+  title: "プライバシーポリシー",
+  alternates: { canonical: "/privacy-policy" },
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    siteName: "ManyConnection合同会社",
+    title: "プライバシーポリシー｜ManyConnection合同会社",
+    description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+    url: "https://manyconnection.co.jp/privacy-policy",
+  },
+  twitter: {
+    card: "summary",
+    title: "プライバシーポリシー｜ManyConnection合同会社",
+    description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+  },
   description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
 }
 
