@@ -1,7 +1,7 @@
 # ManyConnection コーポレートサイト
 
 受託開発の問い合わせ獲得を目的としたランディング型のコーポレートサイトです。
-Next.js (App Router) + Tailwind CSS v4 + shadcn/ui、Netlify にデプロイしています。
+Next.js (App Router) + Tailwind CSS v4 + shadcn/ui、Vercel にデプロイしています。
 
 ```bash
 npm install
@@ -49,15 +49,16 @@ npm run build
 | 11 | 会社概要 | `components/company-section.tsx` | 与信の判断材料 |
 | 12 | お問い合わせ | `components/contact-section.tsx` | リード獲得フォーム |
 
-## お問い合わせフォーム（Netlify Forms）
+## お問い合わせフォーム
 
-Netlify は**静的 HTML からフィールドを検出**するため、フォーム項目は 2 ファイルで二重管理になっています。
+> **注意**：フォームは Netlify Forms 前提の実装（`data-netlify="true"`）のままです。Vercel には Netlify Forms がないため、現状では送信が受け付けられません（本番の送信先は POST に 405 を返します）。Vercel 上で動く送信先（Formspree 等の外部フォームサービスや API Route）への移行が必要です。`netlify.toml` も Netlify 時代の名残です。
+
+現状の実装では、フォーム項目を 2 ファイルで二重管理しています。
 
 - `components/contact-section.tsx` … 実際に表示されるフォーム
 - `public/contact.html` … Netlify の検出用 hidden フォーム
 
-**項目を増減したら必ず両方を揃えてください。** 揃っていないフィールドは送信されても記録されません。
-送信後は `public/contact-success.html` を経由して `/contact-success` に遷移します。
+送信後は `public/contact-success.html` を経由して `/contact-success` に遷移する想定です。
 
 ## 会社サイトの Google Analytics
 
