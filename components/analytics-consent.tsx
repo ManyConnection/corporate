@@ -10,6 +10,8 @@ const lifetime = 180 * 24 * 60 * 60 * 1000
 const pageTitles: Record<string, string> = {
   "/": "ManyConnection合同会社｜業務システム・アプリの受託開発",
   "/privacy-policy": "プライバシーポリシー｜ManyConnection合同会社",
+  "/futari-gohan/privacy-policy": "ふたりのお願い プライバシーポリシー｜ManyConnection合同会社",
+  "/futari-gohan/support": "ふたりのお願い サポート｜ManyConnection合同会社",
   "/analytics-privacy": "アクセス解析について｜ManyConnection合同会社",
   "/contact-success": "お問い合わせありがとうございます｜ManyConnection合同会社",
 }

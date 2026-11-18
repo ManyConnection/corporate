@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -10,15 +11,15 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     siteName: "ManyConnection合同会社",
     title: "プライバシーポリシー｜ManyConnection合同会社",
-    description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+    description: "ManyConnectionが提供するサービスのプライバシーポリシーです。",
     url: "https://manyconnection.co.jp/privacy-policy",
   },
   twitter: {
     card: "summary",
     title: "プライバシーポリシー｜ManyConnection合同会社",
-    description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+    description: "ManyConnectionが提供するサービスのプライバシーポリシーです。",
   },
-  description: "TimeFitアプリのプライバシーポリシー。個人情報の取り扱いについて説明しています。",
+  description: "ManyConnectionが提供するサービスのプライバシーポリシーです。",
 }
 
 export default function PrivacyPolicyPage() {
@@ -34,6 +35,20 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-12">
             プライバシーポリシー
           </h1>
+
+          <section className="mb-12 border border-border bg-surface p-6">
+            <h2 className="text-xl font-semibold text-foreground mb-3">アプリ別のポリシー</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              アプリによって取り扱う情報が異なります。ふたりのお願いをご利用の方は、専用のポリシーをご確認ください。
+            </p>
+            <Link href="/futari-gohan/privacy-policy" className="mt-4 inline-block underline underline-offset-4">
+              ふたりのお願い プライバシーポリシー
+            </Link>
+            <br />
+            <Link href="/futari-gohan/support" className="mt-2 inline-block underline underline-offset-4">
+              ふたりのお願い サポート
+            </Link>
+          </section>
 
           <div className="max-w-none space-y-8">
             <section>

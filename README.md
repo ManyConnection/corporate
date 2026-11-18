@@ -68,6 +68,7 @@ npm run build
 - 同意前・拒否時はタグをロードしません。広告関連の同意は拒否のままです。設定変更はページ下部から可能です。
 - ページ閲覧は `send_page_view: false` と明示イベントで管理し、フォーム入力、URL クエリ、フラグメント、参照元 URL は送りません。
 - パス追加時は `pageTitles` の固定タイトルと sitemap を更新してください。個人情報を含む動的パスは追加しないでください。
-- `/analytics-privacy` は会社サイトの GA 用説明ページです。既存の `/privacy-policy` は TimeFit 用のままです。
+- `/analytics-privacy` は会社サイトの GA 用説明ページです。`/privacy-policy` はTimeFit向け説明を維持し、アプリ別ポリシーへの案内を掲載します。
+- `ふたりのお願い` の App Store 用プライバシーポリシーとサポートURLは `/futari-gohan/privacy-policy` と `/futari-gohan/support` です。
 - Vercel Web Analytics は従来設定を維持しています。
 - 変更時は型検査・ビルドに加え、初回／拒否／許可／SPA 遷移／取り消し／別タブ／同意期限切れをブラウザで確認してください。許可前に Google 通信がないことと、許可後のページ閲覧が一度だけ送信されることを確認します。
